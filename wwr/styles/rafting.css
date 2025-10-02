@@ -7,6 +7,15 @@
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
+nav ul {
+  display: flex;
+  flex-direction: column;  /* stacks items top to bottom */
+  gap: 0.5rem;             /* spacing between items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;

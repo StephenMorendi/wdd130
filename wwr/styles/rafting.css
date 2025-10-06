@@ -1,19 +1,39 @@
 
 :root {
-  --primary-color: #055a05; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
+  --primary-color: #055a05; 
+  --secondary-color: #f4a261; 
+  --accent1-color: #264653; 
+  --accent2-color: #e9c46a; 
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
-nav ul {
-  display: flex;
-  flex-direction: column;  /* stacks items top to bottom */
-  gap: 0.5rem;             /* spacing between items */
+
+header{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: var()
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-bar ul {
+  display: flex; 
+  gap: 20px;             
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color:whitesmoke;
+  font-weight:bold;
+  transition: var(--accent1-color)
 }
 
 * {
@@ -26,7 +46,7 @@ body {
   color: var(#6B7280);
 }
 header, main, footer {
-  width: 840px;
+  
   margin: 0 auto;
 }
 
